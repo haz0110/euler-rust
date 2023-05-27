@@ -10,6 +10,7 @@ mod problem2;
 mod problem3;
 mod problem4;
 mod problem5;
+mod problem6;
 
 fn main() {
 
@@ -50,6 +51,11 @@ fn main() {
     println!("---------------");
     println!("PROBLEM 5");
     println!("{}", problem5::problem5(20));
+    println!("---------------");
+
+    println!("---------------");
+    println!("PROBLEM 6");
+    println!("{}", problem6::problem6());
     println!("---------------");
 
     #[cfg(debug_assertions)]
