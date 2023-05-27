@@ -12,3 +12,4 @@ dependencies = [
 [[package]]
 name = "hazs_tools"
 version = "0.1.0"
+source = "git+https://github.com/haz0110/hazs_tools#46f183471c62bad93260e232241de8fcfc1b7b44"
