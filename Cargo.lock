@@ -12,7 +12,7 @@ dependencies = [
 [[package]]
 name = "hazs_tools"
 version = "0.1.0"
-source = "git+https://github.com/haz0110/hazs_tools#ed9c5abd06e62a103d4a05ca2d65457b9506cf7a"
+source = "git+https://github.com/haz0110/hazs_tools#2779befad4a19125271e77efccbc0c17c2157388"
 dependencies = [
  "palindrome",
  "primes",

@@ -29,7 +29,7 @@ fn main() {
 
     println!("---------------");
     println!("PROBLEM 1");
-    println!("{}", problem1::problem1());
+    println!("{}", problem1::problem1(1000, 3, 5));
     println!("---------------");
 
     println!("---------------");
@@ -47,7 +47,9 @@ fn main() {
 
     println!("---------------");
     println!("PROBLEM 4");
-    println!("{}", problem4::problem4());
+    let result = palindrome::palindromes(3);
+    println!("{}", result[result.len() - 1]);
+    
     println!("---------------");
 
     println!("---------------");
