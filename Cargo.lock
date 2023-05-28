@@ -12,10 +12,17 @@ dependencies = [
 [[package]]
 name = "hazs_tools"
 version = "0.1.0"
-source = "git+https://github.com/haz0110/hazs_tools#acf8de18151c9f532b45908d2d14acf6b835c681"
+source = "git+https://github.com/haz0110/hazs_tools#ed9c5abd06e62a103d4a05ca2d65457b9506cf7a"
 dependencies = [
+ "palindrome",
  "primes",
 ]
+
+[[package]]
+name = "palindrome"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ad0e2dd895f762f1f48f435562f3e8f0162fb2cbc25b0ee7d3296ab0f39f0719"
 
 [[package]]
 name = "primes"
