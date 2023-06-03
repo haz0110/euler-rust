@@ -7,12 +7,13 @@ name = "euler-rust"
 version = "0.1.0"
 dependencies = [
  "hazs_tools",
+ "primes",
 ]
 
 [[package]]
 name = "hazs_tools"
 version = "0.1.0"
-source = "git+https://github.com/haz0110/hazs_tools#2779befad4a19125271e77efccbc0c17c2157388"
+source = "git+https://github.com/haz0110/hazs_tools#99ecf05c6e77d48563ca985ed5e47e2217479bcd"
 dependencies = [
  "palindrome",
  "primes",

@@ -5,10 +5,13 @@ use std::env::args;
 
 use std::time::Instant;
 
+use hazs_tools::euler_specific;
 use hazs_tools::euler_specific::*;
 use hazs_tools::mathematics::*;
 
 mod problem1;
+mod problem10;
+mod problem12;
 mod problem3;
 mod problem4;
 
@@ -49,7 +52,7 @@ fn main() {
     println!("PROBLEM 4");
     let result = palindrome::palindromes(3);
     println!("{}", result[result.len() - 1]);
-    
+
     println!("---------------");
 
     println!("---------------");
@@ -71,6 +74,25 @@ fn main() {
     println!("---------------");
     println!("PROBLEM 7");
     println!("{}", prime_algorithms::nth_prime(10_001));
+    println!("---------------");
+
+    println!("---------------");
+    println!("PROBLEM 9");
+    println!(
+        "{}",
+        euler_specific::p9_special_pythagorean_triplet::special_pythagorean_triplet()
+    );
+    println!("---------------");
+
+    println!("---------------");
+    println!("PROBLEM 10");
+    println!("{}", problem10::problem10());
+    println!("---------------");
+
+    println!("---------------");
+    println!("PROBLEM 12");
+    println!("Current algorithm is too slow, so it is commmented out for now.");
+    // println!("{}", problem12::problem12());
     println!("---------------");
 
     #[cfg(debug_assertions)]
