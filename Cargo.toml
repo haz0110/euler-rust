@@ -7,4 +7,3 @@ edition = "2021"
 
 [dependencies]
 hazs_tools = { git = "https://github.com/haz0110/hazs_tools" }  
-primes = "0.3.0"

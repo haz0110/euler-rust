@@ -7,26 +7,9 @@ name = "euler-rust"
 version = "0.1.0"
 dependencies = [
  "hazs_tools",
- "primes",
 ]
 
 [[package]]
 name = "hazs_tools"
 version = "0.1.0"
-source = "git+https://github.com/haz0110/hazs_tools#99ecf05c6e77d48563ca985ed5e47e2217479bcd"
-dependencies = [
- "palindrome",
- "primes",
-]
-
-[[package]]
-name = "palindrome"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ad0e2dd895f762f1f48f435562f3e8f0162fb2cbc25b0ee7d3296ab0f39f0719"
-
-[[package]]
-name = "primes"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "68a61082d8bceecd71a3870e9162002bb75f7ba9c7aa8b76227e887782fef9c8"
+source = "git+https://github.com/haz0110/hazs_tools#22b1aa58b393fa1a439dd43694daa5044b6217f8"

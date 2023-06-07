@@ -4,16 +4,7 @@
 use std::env::args;
 
 use std::time::Instant;
-
-use hazs_tools::euler_specific;
-use hazs_tools::euler_specific::*;
-use hazs_tools::mathematics::*;
-
-mod problem1;
-mod problem10;
-mod problem12;
-mod problem3;
-mod problem4;
+use hazs_tools::mathematics;
 
 fn main() {
     let now = Instant::now();
@@ -32,70 +23,66 @@ fn main() {
 
     println!("---------------");
     println!("PROBLEM 1");
-    println!("{}", problem1::problem1(1000, 3, 5));
+    {
+        let mut result: Vec<usize> = Vec::new();
+        for number in 1..1000 {
+            if number % 3 == 0 || number % 5 == 0 {
+                result.push(number);
+            }
+        }
+        println!("Result is: {}", mathematics::common::sum_of_array_items(result));
+    }
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 2");
-    println!(
-        "{}",
-        common::sum_of_even_array_items(&mut fibonacci::fibonacci_series(4_000_000))
-    );
+    {
+        let mut fibonacci_numbers = mathematics::sequences::fibonacci(4_000_000);
+        println!("Result is: {}", mathematics::common::sum_of_even_array_items(&mut fibonacci_numbers));
+    }
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 3");
-    println!("{}", problem3::problem3(600_851_475_143));
+    {
+        let number: usize = 1_851_475_143;
+        let mut prime_factors = mathematics::common::prime_factors(number);
+        println!("Result is: {}", prime_factors[prime_factors.len() - 1]);
+    }
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 4");
-    let result = palindrome::palindromes(3);
-    println!("{}", result[result.len() - 1]);
-
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 5");
-    println!(
-        "{}",
-        p5_smallest_multiple::smallest_multiple(20, 1_000_000_000)
-    );
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 6");
-    println!(
-        "{}",
-        square_operations::square_of_sum_of_numbers(100) - square_operations::sum_of_squares(100)
-    );
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 7");
-    println!("{}", prime_algorithms::nth_prime(10_001));
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 9");
     println!(
-        "{}",
-        euler_specific::p9_special_pythagorean_triplet::special_pythagorean_triplet()
+        "{}", 1
     );
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 10");
-    println!("{}", problem10::problem10());
     println!("---------------");
 
     println!("---------------");
     println!("PROBLEM 12");
-    println!("Current algorithm is too slow, so it is commmented out for now.");
-    // println!("{}", problem12::problem12());
     println!("---------------");
 
-    #[cfg(debug_assertions)]
+    // #[cfg(debug_assertions)]
     {
         println!("\n");
         println!("---------------");
